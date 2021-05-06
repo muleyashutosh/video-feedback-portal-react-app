@@ -4,7 +4,7 @@ import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import serverUrl from "../../serverUrl";
 import NProgress from "nprogress";
-import 'nprogress/nprogress.css'
+import "nprogress/nprogress.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -95,7 +95,7 @@ const WebcamSurface = () => {
       setImgSrc("");
       setSubmitButtonState(true);
     }
-    NProgress.done()
+    NProgress.done();
   };
 
   return (

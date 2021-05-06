@@ -10,8 +10,8 @@ import { makeStyles } from "@material-ui/styles";
 import { Typography } from "@material-ui/core";
 import DataTable from "../DataTable/DataTable";
 import serverUrl from "../../serverUrl";
-import NProgress from 'nprogress'
-import 'nprogress/nprogress.css'
+import NProgress from "nprogress";
+import "nprogress/nprogress.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,7 +52,7 @@ const AdminPage = () => {
   const [invalidCreds, setInvalidCreds] = useState(false);
 
   const handleSubmit = async (event) => {
-    NProgress.start()
+    NProgress.start();
     event.preventDefault();
     const resp = await fetch(`${serverUrl}/api/signin`, {
       headers: {
@@ -70,7 +70,7 @@ const AdminPage = () => {
     } else {
       setInvalidCreds(true);
     }
-    NProgress.done()
+    NProgress.done();
   };
 
   const handleUsernameChange = ({ target }) => {
