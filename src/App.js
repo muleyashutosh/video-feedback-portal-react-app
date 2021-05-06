@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Fragment } from "react";
+import NavBar from "./components/NavBar/NavBar";
+import WebcamSurface from "./components/WebcamSurface/WebcamSurface";
+import AdminPage from "./components/AdminData/AdminData.js";
+import Video from "./components/Video/Video";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Fragment>
+        <NavBar />
+        <Switch>
+          <Route exact path="/">
+            <WebcamSurface />
+          </Route>
+          <Route path="/admin">
+            <AdminPage />
+          </Route>
+          <Route path="/video/:filename">
+            <Video />
+          </Route>
+        </Switch>
+      </Fragment>
+    </Router>
   );
-}
+};
 
 export default App;
