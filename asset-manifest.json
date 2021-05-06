@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/video-feedback-portal-react-app/static/css/main.56cda763.chunk.css",
-    "main.js": "/video-feedback-portal-react-app/static/js/main.fd6cfa59.chunk.js",
-    "main.js.map": "/video-feedback-portal-react-app/static/js/main.fd6cfa59.chunk.js.map",
+    "main.js": "/video-feedback-portal-react-app/static/js/main.b8bb3a3e.chunk.js",
+    "main.js.map": "/video-feedback-portal-react-app/static/js/main.b8bb3a3e.chunk.js.map",
     "runtime-main.js": "/video-feedback-portal-react-app/static/js/runtime-main.1c1fa5a1.js",
     "runtime-main.js.map": "/video-feedback-portal-react-app/static/js/runtime-main.1c1fa5a1.js.map",
     "static/css/2.c9905f33.chunk.css": "/video-feedback-portal-react-app/static/css/2.c9905f33.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.c9905f33.chunk.css",
     "static/js/2.8e57c961.chunk.js",
     "static/css/main.56cda763.chunk.css",
-    "static/js/main.fd6cfa59.chunk.js"
+    "static/js/main.b8bb3a3e.chunk.js"
   ]
 }
