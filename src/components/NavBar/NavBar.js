@@ -26,12 +26,18 @@ const NavBar = () => {
     <AppBar position="static">
       <Toolbar className={classes.root}>
         <Typography variant="h6" className={classes.title}>
-          <Link className={classes.white} to="/">
+          <Link
+            className={classes.white}
+            to="/video-feedback-portal-react-app/"
+          >
             Feedback
           </Link>
         </Typography>
         <Button color="inherit" variant="outlined">
-          <Link className={classes.white} to="/admin">
+          <Link
+            className={classes.white}
+            to="/video-feedback-portal-react-app/admin"
+          >
             Admin
           </Link>
         </Button>

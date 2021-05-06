@@ -25,10 +25,10 @@ const Video = () => {
     })();
   });
 
-  console.log(filename);
+  // console.log(filename);
   return (
     <div className={classes.videoParent}>
-      <video autoPlay controls src={video} loading></video>
+      <video autoPlay controls src={video} loading="true"></video>
     </div>
   );
 };

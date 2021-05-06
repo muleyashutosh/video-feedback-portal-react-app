@@ -7,6 +7,7 @@ import {
   TableCell,
   TableBody,
   Paper,
+  LinearProgress,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import { Link } from "react-router-dom";
@@ -26,10 +27,12 @@ const useStyles = makeStyles((theme) => ({
   container: {
     width: "95%",
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     marginTop: theme.spacing(3),
     marginRight: "auto",
     marginLeft: "auto",
+    flexDirection: "column",
+    overflowY: "hidden",
   },
   emptyMsg: {
     margin: theme.spacing(2),
@@ -37,18 +40,25 @@ const useStyles = makeStyles((theme) => ({
   pointer: {
     cursor: "pointer",
   },
+  loader: {
+    width: "100%",
+    "& > * + *": {
+      marginTop: theme.spacing(2),
+    },
+  },
 }));
 
 const DataTable = () => {
   const [rows, setRows] = useState([]);
   const classes = useStyles();
-
+  const [loading, setLoading] = useState(true);
   useEffect(
     () =>
       (async () => {
         const response = await fetch(`${serverUrl}/api/getEntries`);
         const { data } = await response.json();
         setRows(data);
+        setLoading(false);
       })(),
     [setRows]
   );
@@ -88,6 +98,7 @@ const DataTable = () => {
         component={Paper}
         elevation={3}
       >
+        {loading ? <LinearProgress className={classes.loader} /> : null}
         <Table
           className={classes.table}
           aria-label="simple table"
@@ -103,7 +114,7 @@ const DataTable = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rowsData.length === 0 ? (
+            {rowsData.length === 0 && !loading ? (
               <TableRow className={classes.emptyMsg}>
                 <TableCell>{"No Records to show yet"}</TableCell>
               </TableRow>
@@ -115,7 +126,7 @@ const DataTable = () => {
                   </TableCell>
                   <TableCell align="center">
                     <Link
-                      to={`/video/${filename}`}
+                      to={`/video-feedback-portal-react-app/video/${filename}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

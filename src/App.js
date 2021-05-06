@@ -12,13 +12,13 @@ const App = () => {
       <Fragment>
         <NavBar />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/video-feedback-portal-react-app/">
             <WebcamSurface />
           </Route>
-          <Route path="/admin">
+          <Route path="/video-feedback-portal-react-app/admin">
             <AdminPage />
           </Route>
-          <Route path="/video/:filename">
+          <Route path="/video-feedback-portal-react-app/video/:filename">
             <Video />
           </Route>
         </Switch>
