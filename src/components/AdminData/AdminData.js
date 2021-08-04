@@ -1,4 +1,4 @@
-import { useState, Fragment } from "react";
+import { useState, Fragment, useEffect } from "react";
 import {
   Card,
   CardContent,
@@ -42,14 +42,28 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "flex-end",
   },
+  
 }));
+
+const getVerificationFromStorage = () => {
+  const storage = localStorage.getItem('verifiedStatus')
+  if(storage) return JSON.parse(storage).verified;
+  return false;
+}
 
 const AdminPage = () => {
   const classes = useStyles();
-  const [verified, setVerified] = useState(false);
+  const [verified, setVerified] = useState(getVerificationFromStorage());
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [invalidCreds, setInvalidCreds] = useState(false);
+  NProgress.configure({
+    showSpinner: false
+  })
+
+  useEffect(() => {
+    localStorage.setItem('verifiedStatus', JSON.stringify({ verified }))
+  }, [verified])
 
   const handleSubmit = async (event) => {
     NProgress.start();

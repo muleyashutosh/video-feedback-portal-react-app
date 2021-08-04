@@ -46,6 +46,12 @@ const useStyles = makeStyles((theme) => ({
       marginTop: theme.spacing(2),
     },
   },
+  tableHeading: {
+    fontWeight: "bold",
+    background: "#3f3f3f",
+    color:"#fff",
+    fontSize: "0.9rem"
+  }
 }));
 
 const DataTable = () => {
@@ -106,11 +112,11 @@ const DataTable = () => {
         >
           <TableHead>
             <TableRow>
-              <TableCell>ID</TableCell>
-              <TableCell align="center">Video</TableCell>
-              <TableCell align="center">TimeStamp</TableCell>
-              <TableCell align="center">IP Address</TableCell>
-              <TableCell align="center">Download</TableCell>
+              <TableCell className={classes.tableHeading}>ID</TableCell>
+              <TableCell className={classes.tableHeading} align="center">Video</TableCell>
+              <TableCell className={classes.tableHeading} align="center">TimeStamp</TableCell>
+              <TableCell className={classes.tableHeading} align="center">IP Address</TableCell>
+              <TableCell className={classes.tableHeading} align="center">Download</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
