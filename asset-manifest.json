@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/video-feedback-portal-react-app/static/css/main.56cda763.chunk.css",
-    "main.js": "/video-feedback-portal-react-app/static/js/main.e23dded1.chunk.js",
-    "main.js.map": "/video-feedback-portal-react-app/static/js/main.e23dded1.chunk.js.map",
+    "main.js": "/video-feedback-portal-react-app/static/js/main.1ea23d20.chunk.js",
+    "main.js.map": "/video-feedback-portal-react-app/static/js/main.1ea23d20.chunk.js.map",
     "runtime-main.js": "/video-feedback-portal-react-app/static/js/runtime-main.92c70658.js",
     "runtime-main.js.map": "/video-feedback-portal-react-app/static/js/runtime-main.92c70658.js.map",
-    "static/css/2.58f032df.chunk.css": "/video-feedback-portal-react-app/static/css/2.58f032df.chunk.css",
-    "static/js/2.a62c6d62.chunk.js": "/video-feedback-portal-react-app/static/js/2.a62c6d62.chunk.js",
-    "static/js/2.a62c6d62.chunk.js.map": "/video-feedback-portal-react-app/static/js/2.a62c6d62.chunk.js.map",
+    "static/css/2.c9905f33.chunk.css": "/video-feedback-portal-react-app/static/css/2.c9905f33.chunk.css",
+    "static/js/2.d8088870.chunk.js": "/video-feedback-portal-react-app/static/js/2.d8088870.chunk.js",
+    "static/js/2.d8088870.chunk.js.map": "/video-feedback-portal-react-app/static/js/2.d8088870.chunk.js.map",
     "static/js/3.fe98ea38.chunk.js": "/video-feedback-portal-react-app/static/js/3.fe98ea38.chunk.js",
     "static/js/3.fe98ea38.chunk.js.map": "/video-feedback-portal-react-app/static/js/3.fe98ea38.chunk.js.map",
     "index.html": "/video-feedback-portal-react-app/index.html",
-    "static/css/2.58f032df.chunk.css.map": "/video-feedback-portal-react-app/static/css/2.58f032df.chunk.css.map",
+    "static/css/2.c9905f33.chunk.css.map": "/video-feedback-portal-react-app/static/css/2.c9905f33.chunk.css.map",
     "static/css/main.56cda763.chunk.css.map": "/video-feedback-portal-react-app/static/css/main.56cda763.chunk.css.map",
-    "static/js/2.a62c6d62.chunk.js.LICENSE.txt": "/video-feedback-portal-react-app/static/js/2.a62c6d62.chunk.js.LICENSE.txt"
+    "static/js/2.d8088870.chunk.js.LICENSE.txt": "/video-feedback-portal-react-app/static/js/2.d8088870.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.92c70658.js",
-    "static/css/2.58f032df.chunk.css",
-    "static/js/2.a62c6d62.chunk.js",
+    "static/css/2.c9905f33.chunk.css",
+    "static/js/2.d8088870.chunk.js",
     "static/css/main.56cda763.chunk.css",
-    "static/js/main.e23dded1.chunk.js"
+    "static/js/main.1ea23d20.chunk.js"
   ]
 }
